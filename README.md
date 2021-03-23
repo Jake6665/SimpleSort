@@ -21,3 +21,5 @@
 
 ## Instructions to test if Simple and Reverse Simple Sort work correctly:
 1: Run application by typing "test" and pressing enter
+2: If the sorts work, the command line will list no differences detected.
+3: If the diffrences are detected, the command line will displayed where the difference are.
