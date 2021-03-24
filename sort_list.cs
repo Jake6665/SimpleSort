@@ -8,7 +8,6 @@ namespace JakobThrasher_Homework1
     {
         static void Main(string[] args)
         {
-            
             try
             {
                 string[] lines = File.ReadAllLines("Sort Me.txt");
