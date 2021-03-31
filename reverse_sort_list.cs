@@ -37,10 +37,10 @@ namespace JakobThrasher_Homework1
 
                 string[] reverseLine = new string[lines.Length];
 
-                for (int i = 0; i < lines.Length; i++)
+                /*for (int i = 0; i < lines.Length; i++)
                 {
                     reverseLine[reverseLine.Length-1-i] = newLine[i];
-                }
+                }*/
 
                 foreach (string line in reverseLine)
                 {
