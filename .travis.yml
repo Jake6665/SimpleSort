@@ -1,4 +1,6 @@
-language: csharp
+language:
+ - csharp
+ - bash
 mono:
 - latest
 
@@ -9,10 +11,4 @@ script:
 - mono sort_list.exe
 - mcs -out:reverse_sort_list.exe reverse_sort_list.cs
 - mono reverse_sort_list.exe
-- mono sort_list.exe < "Sort Me".txt > "Output_1.txt"
-- mono reverse_sort_list.exe < "Sort Me".txt > "Output_2".txt
-
-- mono fc "Output_1".txt "Sorted Text".txt
-- mono IF %ERRORLEVEL% EQU 0 (Echo Sort Pass) ELSE (Echo Sort Failed)
-- mono fc "Output_2".txt "Reversed Sorted Text".txt
-- mono IF %ERRORLEVEL% EQU 0 (Echo Sort Pass) ELSE (Echo Sort Failed)
+- bash travis_test.sh
